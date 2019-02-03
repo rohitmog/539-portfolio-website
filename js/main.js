@@ -77,7 +77,7 @@ $(document).ready(function() {
 class TextScramble {
   constructor(el) {
     this.el = el
-    this.chars = '!<>-_\\/[]{}—=+*^?#________'
+    this.chars = 'Do Your Job'
     this.update = this.update.bind(this)
   }
   setText(newText) {
@@ -89,7 +89,61 @@ class TextScramble {
       const from = oldText[i] || ''
       const to = newText[i] || ''
       const start = Math.floor(Math.random() * 40)
-      const end = start + Math.floor(Math.random() * 40)
+      const end = start + Math.floor(Math.random() * 250)
+      this.queue.push({ from, to, start, end })
+    }
+    cancelAnimationFrame(this.frameRequest)
+    this.frame = 0
+    this.update()
+    return promise
+  }
+  update() {
+    let output = ''
+    let complete = 0
+    for (let i = 0, n = this.queue.length; i < n; i++) {
+      let { from, to, start, end, char } = this.queue[i]
+      if (this.frame >= end) {
+        complete++
+        output += to
+      } else if (this.frame >= start) {
+        if (!char || Math.random() < 0.28) {
+          char = this.randomChar()
+          this.queue[i].char = char
+        }
+        output += `<span class="dud">${char}</span>`
+      } else {
+        output += from
+      }
+    }
+    this.el.innerHTML = output
+    if (complete === this.queue.length) {
+      this.resolve()
+    } else {
+      this.frameRequest = requestAnimationFrame(this.update)
+      this.frame++
+    }
+  }
+  randomChar() {
+    return this.chars[Math.floor(Math.random() * this.chars.length)]
+  }
+}
+
+class TextScrambleNumbers {
+  constructor(el) {
+    this.el = el
+    this.chars = '042697'
+    this.update = this.update.bind(this)
+  }
+  setText(newText) {
+    const oldText = this.el.innerText
+    const length = Math.max(oldText.length, newText.length)
+    const promise = new Promise((resolve) => this.resolve = resolve)
+    this.queue = []
+    for (let i = 0; i < length; i++) {
+      const from = oldText[i] || ''
+      const to = newText[i] || ''
+      const start = Math.floor(Math.random() * 40)
+      const end = start + Math.floor(Math.random() * 250)
       this.queue.push({ from, to, start, end })
     }
     cancelAnimationFrame(this.frameRequest)
@@ -129,25 +183,118 @@ class TextScramble {
 }
 
 // ——————————————————————————————————————————————————
-// Example
+// Title Text Scramble
 // ——————————————————————————————————————————————————
 
-const phrases = ["University of Michigan", "M.S. Information", "B.S. Computer Science"]
+const phrases = ["Sports Analytics Consultant"]
 
-const el = document.querySelector('.text')
+const el = document.querySelector('.title')
 const fx = new TextScramble(el)
 
 let counter = 0
 const next = () => {
-  fx.setText(phrases[counter]).then(() => {
-    setTimeout(next, 800)
-  })
+  fx.setText(phrases[counter])
   counter = (counter + 1) % phrases.length
 }
 
 next()
 
+// ——————————————————————————————————————————————————
+// School Text Scramble
+// ——————————————————————————————————————————————————
 
+const phrases1 = ["University of Michigan"]
+
+const el1= document.querySelector('.school')
+const fx1 = new TextScramble(el1)
+
+let counter1 = 0
+const next1 = () => {
+  fx1.setText(phrases1[counter1])
+  counter1 = (counter1 + 1) % phrases1.length
+}
+
+next1()
+// // ——————————————————————————————————————————————————
+// // Masters Text Scramble
+// // ——————————————————————————————————————————————————
+
+const phrases2 = ["M.S. Information"]
+
+const el2 = document.querySelector('.masters')
+const fx2 = new TextScramble(el2)
+
+let counter2 = 0
+const next2 = () => {
+  fx2.setText(phrases2[counter])
+  counter2 = (counter2 + 1) % phrases2.length
+}
+
+next2()
+// // ——————————————————————————————————————————————————
+// // Bachelors Text Scramble
+// // ——————————————————————————————————————————————————
+
+// const phrases3 = ["B.S. Computer Science"]
+
+// const el3 = document.querySelector('.bachelors')
+// const fx3 = new TextScramble(el3)
+
+// let counter3 = 0
+// const next3 = () => {
+//   fx3.setText(phrases3[counter3])
+//   counter3 = (counter3 + 1) % phrases3.length
+// }
+
+// next3()
+// // ——————————————————————————————————————————————————
+// // Age Text Scramble
+// // ——————————————————————————————————————————————————
+
+const phrases4 = ["22"]
+
+const el4 = document.querySelector('.age')
+const fx4 = new TextScrambleNumbers(el4)
+
+let counter4 = 0
+const next4 = () => {
+  fx4.setText(phrases4[counter4])
+  counter4 = (counter4 + 1) % phrases4.length
+}
+
+next4()
+// // ——————————————————————————————————————————————————
+// // Projects Text Scramble
+// // ——————————————————————————————————————————————————
+
+const phrases5 = ["10"]
+
+const el5 = document.querySelector('.projects')
+const fx5 = new TextScrambleNumbers(el5)
+
+let counter5 = 0
+const next5 = () => {
+  fx5.setText(phrases5[counter5])
+  counter5 = (counter5 + 1) % phrases5.length
+}
+
+next5()
+// // ——————————————————————————————————————————————————
+// // Services Text Scramble
+// // ——————————————————————————————————————————————————
+
+const phrases6 = ["3"]
+
+const el6 = document.querySelector('.services')
+const fx6 = new TextScrambleNumbers(el6)
+
+let counter6 = 0
+const next6 = () => {
+  fx6.setText(phrases6[counter6])
+  counter6 = (counter6 + 1) % phrases6.length
+}
+
+next6()
   // ========================================================================= //
   //  Typed Js
   // ========================================================================= //
