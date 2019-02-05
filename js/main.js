@@ -89,7 +89,7 @@ class TextScramble {
       const from = oldText[i] || ''
       const to = newText[i] || ''
       const start = Math.floor(Math.random() * 40)
-      const end = start + Math.floor(Math.random() * 250)
+      const end = start + Math.floor(Math.random() * 100)
       this.queue.push({ from, to, start, end })
     }
     cancelAnimationFrame(this.frameRequest)
@@ -232,21 +232,34 @@ const next2 = () => {
 
 next2()
 // // ——————————————————————————————————————————————————
-// // Bachelors Text Scramble
+// // Name Text Scramble
 // // ——————————————————————————————————————————————————
 
-// const phrases3 = ["B.S. Computer Science"]
+const phrases3 = ["ROHIT"]
 
-// const el3 = document.querySelector('.bachelors')
-// const fx3 = new TextScramble(el3)
+const el3 = document.querySelector('.name')
+const fx3 = new TextScramble(el3)
 
-// let counter3 = 0
-// const next3 = () => {
-//   fx3.setText(phrases3[counter3])
-//   counter3 = (counter3 + 1) % phrases3.length
-// }
+let counter3 = 0
+const next3 = () => {
+  fx3.setText(phrases3[counter3])
+  counter3 = (counter3 + 1) % phrases3.length
+}
 
-// next3()
+next3()
+
+const phrases33 = ["MOGALAYAPALLI"]
+
+const el33 = document.querySelector('.name1')
+const fx33 = new TextScramble(el33)
+
+let counter33 = 0
+const next33 = () => {
+  fx33.setText(phrases33[counter33])
+  counter33 = (counter33 + 1) % phrases33.length
+}
+
+next33()
 // // ——————————————————————————————————————————————————
 // // Age Text Scramble
 // // ——————————————————————————————————————————————————
@@ -314,7 +327,7 @@ next6()
 
   $(function() {
     typedSchool.typed({
-      strings: ["University of Michigan", "M.S. Information", "B.S. Computer Science"] ,
+      strings: ["University of Michigan"] ,
       typeSpeed: 100
 
     });
@@ -361,6 +374,12 @@ next6()
 
     portfolioIsotope.isotope({ filter: $(this).data('filter') });
   });
+
+$(".hover").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+);
 
 
   // ========================================================================= //
