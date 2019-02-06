@@ -174,15 +174,20 @@ body {
 /*----------------------------------------------------------------------------------*/
 /*  Header
 /*-----------------------------------------------------------------------------------*/
-
-#header {
-  background: url("../images/rohit1.jpg") repeat scroll center center / cover;
-  height: 85vh;
+#large-header {
+    position: relative;
+    width: 100%;
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg") repeat scroll center center / cover;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+      height: 85vh;
   width: 100%;
+  
 }
 
-
-#header .header-content {
+#large-header .header-content {
   text-align: left;
   margin-right: 0px;
   width: 35%;
@@ -235,7 +240,7 @@ body {
   font-size: 15px;
 }
 /*Right Side of header*/
-#header .header-details {
+#large-header .header-details {
   text-align: left;
   width: 20%;
   display: inline-block;
