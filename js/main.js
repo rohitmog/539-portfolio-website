@@ -68,7 +68,7 @@ class StickyNavigation {
   
   onTabClick(event, element) {
     event.preventDefault();
-    let scrollTop = $(element.attr('href')).offset().top - this.tabContainerHeight + 1;
+    let scrollTop = $(element.attr('href')).offset().top - this.tabContainerHeight - 30;
     $('html, body').animate({ scrollTop: scrollTop }, 600);
   }
   
@@ -130,143 +130,34 @@ new StickyNavigation();
   // ========================================================================= //
   //  // Text Scramble
   // ========================================================================= //
-
-class TextScramble {
-  constructor(el) {
-    this.el = el
-    this.chars = 'Do Your Job'
-    this.update = this.update.bind(this)
-  }
-  setText(newText) {
-    const oldText = this.el.innerText
-    const length = Math.max(oldText.length, newText.length)
-    const promise = new Promise((resolve) => this.resolve = resolve)
-    this.queue = []
-    for (let i = 0; i < length; i++) {
-      const from = oldText[i] || ''
-      const to = newText[i] || ''
-      const start = Math.floor(Math.random() * 40)
-      const end = start + Math.floor(Math.random() * 100)
-      this.queue.push({ from, to, start, end })
-    }
-    cancelAnimationFrame(this.frameRequest)
-    this.frame = 0
-    this.update()
-    return promise
-  }
-  update() {
-    let output = ''
-    let complete = 0
-    for (let i = 0, n = this.queue.length; i < n; i++) {
-      let { from, to, start, end, char } = this.queue[i]
-      if (this.frame >= end) {
-        complete++
-        output += to
-      } else if (this.frame >= start) {
-        if (!char || Math.random() < 0.28) {
-          char = this.randomChar()
-          this.queue[i].char = char
-        }
-        output += `<span class="dud">${char}</span>`
-      } else {
-        output += from
-      }
-    }
-    this.el.innerHTML = output
-    if (complete === this.queue.length) {
-      this.resolve()
-    } else {
-      this.frameRequest = requestAnimationFrame(this.update)
-      this.frame++
-    }
-  }
-  randomChar() {
-    return this.chars[Math.floor(Math.random() * this.chars.length)]
-  }
-}
-
-// ——————————————————————————————————————————————————
-// Title Text Scramble
-// ——————————————————————————————————————————————————
-
-const phrases = ["Sports Analytics Consultant"]
-
-const el = document.querySelector('.title')
-const fx = new TextScramble(el)
-
-let counter = 0
-const next = () => {
-  fx.setText(phrases[counter])
-  counter = (counter + 1) % phrases.length
-}
-
-next()
-
-// ——————————————————————————————————————————————————
-// School Text Scramble
-// ——————————————————————————————————————————————————
-
-const phrases1 = ["University of Michigan"]
-
-const el1= document.querySelector('.school')
-const fx1 = new TextScramble(el1)
-
-let counter1 = 0
-const next1 = () => {
-  fx1.setText(phrases1[counter1])
-  counter1 = (counter1 + 1) % phrases1.length
-}
-
-next1()
-// // ——————————————————————————————————————————————————
-// // Masters Text Scramble
-// // ——————————————————————————————————————————————————
-
-const phrases2 = ["M.S. Information"]
-
-const el2 = document.querySelector('.masters')
-const fx2 = new TextScramble(el2)
-
-let counter2 = 0
-const next2 = () => {
-  fx2.setText(phrases2[counter])
-  counter2 = (counter2 + 1) % phrases2.length
-}
-
-next2()
-// // ——————————————————————————————————————————————————
-// // Name Text Scramble
-// // ——————————————————————————————————————————————————
-
-const phrases3 = ["ROHIT"]
-
-const el3 = document.querySelector('.name')
-const fx3 = new TextScramble(el3)
-
-let counter3 = 0
-const next3 = () => {
-  fx3.setText(phrases3[counter3])
-  counter3 = (counter3 + 1) % phrases3.length
-}
-
-next3()
-
-const phrases33 = ["MOGALAYAPALLI"]
-
-const el33 = document.querySelector('.name1')
-const fx33 = new TextScramble(el33)
-
-let counter33 = 0
-const next33 = () => {
-  fx33.setText(phrases33[counter33])
-  counter33 = (counter33 + 1) % phrases33.length
-}
-
-next33()
-
-next6()
-
-
+    $("#typed1").typed({
+      strings: ["ROHIT MOGALAYAPALLI"],
+      typeSpeed: 40,
+      startDelay: 500,
+      cursorChar: " ",
+      contentType: 'html'
+    });
+  $("#typed2").typed({
+      strings: ["Sports Analytics Consultant"],
+      typeSpeed: 30,
+      startDelay: 4000,
+      cursorChar: "",
+      contentType: 'html'
+    });
+    $("#typed3").typed({
+      strings: ["University of Michigan"],
+      typeSpeed: 30,
+      startDelay: 6000,
+      cursorChar: "",
+      contentType: 'html'
+    });
+      $("#typed4").typed({
+      strings: ["M.S. Information"],
+      typeSpeed: 30,
+      startDelay: 8000,
+      cursorChar: "",
+      contentType: 'html'
+    });
   // ========================================================================= //
   //  Porfolio isotope and filter
   // ========================================================================= //
