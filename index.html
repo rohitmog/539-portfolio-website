@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Folio - Personal Portfolio Template</title>
+  <title>Rohit Mogalayapalli</title>
   <meta content="" name="keywords">
   <meta content="" name="description">
 
@@ -28,397 +28,137 @@
   <!-- Responsive css -->
   <link href="css/responsive.css" rel="stylesheet">
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="images/favicon.png">
 
-  <!-- =======================================================
-    Theme Name: Folio
-    Theme URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
-</head>
 
 <body>
-
-  <!-- start section navbar -->
-  <nav id="main-nav">
-    <div class="row">
-      <div class="container">
-
-        <div class="logo">
-          <a href="index.html"><img src="images/logo.png" alt="logo"></a>
-        </div>
-
-        <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
-
-        <ul class="nav-menu list-unstyled">
-          <li><a href="#header" class="smoothScroll">Home</a></li>
-          <li><a href="#about" class="smoothScroll">About</a></li>
-          <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
-          <li><a href="#journal" class="smoothScroll">Blog</a></li>
-          <li><a href="#contact" class="smoothScroll">Contact</a></li>
-        </ul>
-
-      </div>
+  <!-- Hero -->
+  <section class="et-hero-tabs">
+    <div class="et-hero-tabs-container">
+      <a class="et-hero-tab" href="#tab-main" >Main</a>
+<!--       <a class="et-hero-tab" href="#tab-services">Services</a> -->
+      <a class ="et-hero-tab" href="#tab-portfolio">Portfolio</a>
+      <a class="et-hero-tab" href="#tab-contact">Contact</a>
     </div>
-  </nav>
-  <!-- End section navbar -->
+  </section>
 
 
   <!-- start section header -->
-  <div id="header" class="home">
+  <div id="large-header" class="home">
+    <div id = "tab-main">
+      <canvas id="demo-canvas" width="1366" height="340"></canvas>
+        <div class="container">
+          <div class="header-content">
+            <h1>ROHIT MOGALAYAPALLI</h1>
+            <h2>Sports Analytics Consultant</h2>
+            <h2>University of Michigan</h2>
+            <h2>M.S. Information</h2>
+<!-- 	        <divSignature>
+				  <svg id="signature" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 130.6 80" xml:space="preserve">
+				                            <path class="line1" d="M3.073,6.044c0,0,1.31,18.664,0,27.833" />
+				                            <path class="line2" d="M12.242,1.788c0,0,0.218,35.254-1.201,40.166" />
+				                            <path class="line3" d="M15.844,18.16c0,0-11.57,1.092-14.189,2.62" />
+				                            <path class="line4" d="M14.843,24.281c0,0,8.95-4.257,10.042-3.383c0,0-0.328,3.383,1.201,3.383c0,0,7.204-2.074,7.641-1.091" />
+				                            <path class="line5" d="M39.829,9.073c0,0-0.737,21.12-3.192,26.522" />
+				                            <path class="line6" d="M31.97,14.067c0,0,12.361-5.321,18.5-7.204S32.845,23.625,38.232,21.871c8.882-2.893,16.445,0.547,15.185,4.229
+					c-2.617,7.648-21.284,12.279-29.306,13.671" />
+				                            <path class="line7" d="M56.337,24.281c0,0,8.95-4.257,10.042-3.383c0,0-0.328,3.383,1.201,3.383c0,0,7.203-2.074,7.64-1.091
+					c0,0-2.183,4.693,2.073,3.929c0,0,10.261,0.655,24.341-0.982c0,0,12.442-1.855,25.213,3.274" />
 
-    <div class="container">
-      <div class="header-content">
-        <h1>I'm <span class="typed"></span></h1>
-        <p>designer, developeur, photographer</p>
+				                        </svg>
+			</divSignature> -->
+          </div>
+        </div>
+        <figure class="image-details">
+      		<img src="images/3_4_ShallowLeft_Down copy.png"/>
+   		 </figure>
 
-        <ul class="list-unstyled list-social">
-          <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-          <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-          <li><a href="#"><i class="ion-social-instagram"></i></a></li>
-          <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-          <li><a href="#"><i class="ion-social-tumblr"></i></a></li>
-          <li><a href="#"><i class="ion-social-dribbble"></i></a></li>
-        </ul>
-      </div>
+        <div class="header-details">
+            <h1> AGE </h1>
+            <h2> <span class ="age"></span>22</h2>
+            <h1> PROJECTS </h1>
+            <h2> <span class ="projects"></span> 10</h2>
+            <h1> CLIENTS </h1>
+            <h2> <span class ="services"></span>5</h2>
+
+         </div>
+        </div>
     </div>
+
   </div>
   <!-- End section header -->
 
-
-  <!-- start section about us -->
-  <div id="about" class="paddsection">
-    <div class="container">
-      <div class="row justify-content-between">
-
-        <div class="col-lg-4 ">
-          <div class="div-img-bg">
-            <div class="about-img">
-              <img src="images/me.jpg" class="img-responsive" alt="me">
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-7">
-          <div class="about-descr">
-
-            <p class="p-heading">im a ux /ui designer austin based who loves clean, simple & unique design. i also enjoy crafting brand identities, icons, & ilustration work. </p>
-            <p class="separator">To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is. The European languages are members of the same family.English person.</p>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end section about us -->
-
-
-  <!-- start section services -->
-  <div id="services">
-    <div class="container">
-
-        <div class="services-carousel owl-theme">
-
-          <div class="services-block">
-
-            <i class="ion-ios-browsers-outline"></i>
-            <span>UI/UX DESIGN</span>
-            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-
-          </div>
-
-          <div class="services-block">
-
-            <i class="ion-ios-lightbulb-outline"></i>
-            <span>BRAND IDENTITY</span>
-            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-
-          </div>
-
-          <div class="services-block">
-
-            <i class="ion-ios-color-wand-outline"></i>
-            <span>WEB DESIGN</span>
-            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-
-          </div>
-
-          <div class="services-block">
-
-            <i class="ion-social-android-outline"></i>
-            <span>MOBILE APPS</span>
-            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-
-          </div>
-
-          <div class="services-block">
-
-            <i class="ion-ios-analytics-outline"></i>
-            <span>Analytics</span>
-            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-
-          </div>
-
-          <div class="services-block">
-
-            <i class="ion-ios-camera-outline"></i>
-            <span>PHOTOGRAPHY</span>
-            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-
-          </div>
-
-        </div>
-
-    </div>
-
-  </div>
-  <!-- end section services -->
-
-
   <!-- start section portfolio -->
-  <div id="portfolio" class="text-center paddsection">
-
-    <div class="container">
-      <div class="section-title text-center">
-        <h2>My Portfolio</h2>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-
-          <div class="portfolio-list">
-
-            <ul class="nav list-unstyled" id="portfolio-flters">
-              <li class="filter filter-active" data-filter=".all">all</li>
-              <li class="filter" data-filter=".branding">branding</li>
-              <li class="filter" data-filter=".mockups">mockups</li>
-              <li class="filter" data-filter=".uikits">ui kits</li>
-              <li class="filter" data-filter=".webdesign">web design</li>
-              <li class="filter" data-filter=".photography">photography</li>
-            </ul>
-
-          </div>
-
-          <div class="portfolio-container">
-
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits webdesign">
-              <a class="popup-img" href="images/portfolio/1.jpg">
-                <img src="images/portfolio/1.jpg" alt="img">
-              </a>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits photography">
-              <a class="popup-img" href="images/portfolio/2.jpg">
-                <img src="images/portfolio/2.jpg"  alt="img">
-              </a>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding webdesig photographyn">
-              <a class="popup-img" href="images/portfolio/3.jpg">
-                <img src="images/portfolio/3.jpg" alt="img">
-              </a>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups webdesign photography">
-              <a class="popup-img" href="images/portfolio/4.jpg">
-                <img src="images/portfolio/4.jpg" alt="img">
-              </a>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits photography">
-              <a class="popup-img" href="images/portfolio/5.jpg">
-                <img src="images/portfolio/5.jpg" alt="img">
-              </a>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits webdesign">
-              <a class="popup-img" href="images/portfolio/6.jpg">
-                <img src="images/portfolio/6.jpg" alt="img">
-              </a>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
+  <div id ='tab-portfolio' class = 'row1'>
+        <figure class="snip0019">
+      <img src="images/Michigan Athletics.png" alt="sample11"/>
+      <figcaption>
+        <div><h2>MICHIGAN<span></span> ATHLETICS</h2></div>
+        <div><p>Leading multiple Sports Analytics projects for the 
+        Michigan Athletic Department</p></div>
+        <a href="#"></a>
+      </figcaption>     
+    </figure>
+    <figure class="snip0019">
+      <img src="images/MSASlogo.png" alt="sample12"/>
+      <figcaption>
+        <div><h2>If we wanted more <span>leisure</span></h2></div>
+        <div><p>We'd invent machines that do things less efficiently.</p></div>
+        <a href="#"></a>
+      </figcaption>     
+    </figure>
+    <figure class="snip0019">
+      <img src="images/recruitingRubric.png" alt="sample13"/>
+      <figcaption>
+        <div><h2>I <span>propose</span> we leave <span>math</span> </h2></div>
+        <div><p>To the machines and go play outside.</p></div>
+        <a href="#"></a>
+      </figcaption>     
+    </figure>
   </div>
-  <!-- End section portfolio -->
 
-
-  <!-- start section journal -->
-  <div id="journal" class="text-left paddsection">
-
-    <div class="container">
-      <div class="section-title text-center">
-        <h2>journal</h2>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="journal-block">
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="journal-info">
-
-              <a href="blog-single.html"><img src="images/blog-post-1.jpg" class="img-responsive" alt="img"></a>
-
-              <div class="journal-txt">
-
-                <h4><a href="blog-single.html">SO LETS MAKE THE MOST IS BEAUTIFUL</a></h4>
-                <p class="separator">To an English person, it will seem like simplified English
-                </p>
-
-              </div>
-
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="journal-info">
-
-              <a href="blog-single.html"><img src="images/blog-post-2.jpg" class="img-responsive" alt="img"></a>
-
-              <div class="journal-txt">
-
-                <h4><a href="#blog-single.html">WE'RE GONA MAKE DREAMS COMES</a></h4>
-                <p class="separator">To an English person, it will seem like simplified English
-                </p>
-
-              </div>
-
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="journal-info">
-
-              <a href="blog-single.html"><img src="images/blog-post-3.jpg" class="img-responsive" alt="img"></a>
-
-              <div class="journal-txt">
-
-                <h4><a href="blog-single.html">NEW LIFE CIVILIZATIONS TO BOLDLY</a></h4>
-                <p class="separator">To an English person, it will seem like simplified English
-                </p>
-
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
+  <div id ='tab-portfolio' class = 'row2'>
+        <figure class="snip0019">
+      <img src= "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample12.jpg" alt="sample11"/>
+      <figcaption>
+        <div><h2>What <span>state</span> do you live in?</h2></div>
+        <div><p>Denial. Miss Wormwood: I don't suppose I can argue with that.</p></div>
+        <a href="#"></a>
+      </figcaption>     
+    </figure>
+    <figure class="snip0019">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample12.jpg" alt="sample12"/>
+      <figcaption>
+        <div><h2>If we wanted more <span>leisure</span></h2></div>
+        <div><p>We'd invent machines that do things less efficiently.</p></div>
+        <a href="#"></a>
+      </figcaption>     
+    </figure>
+    <figure class="snip0019">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample13.jpg" alt="sample13"/>
+      <figcaption>
+        <div><h2>I <span>propose</span> we leave <span>math</span> </h2></div>
+        <div><p>To the machines and go play outside.</p></div>
+        <a href="#"></a>
+      </figcaption>     
+    </figure>
   </div>
-  <!-- End section journal -->
 
-
-  <!-- start sectoion contact -->
-  <div id="contact" class="paddsection">
-    <div class="container">
-      <div class="contact-block1">
-        <div class="row">
-
-          <div class="col-lg-6">
-            <div class="contact-contact">
-
-              <h2 class="mb-30">GET IN TOUCH</h2>
-
-              <ul class="contact-details">
-                <li><span>23 Main, Street</span></li>
-                <li><span>New York, United States</span></li>
-                <li><span>+88 01912704287</span></li>
-                <li><span>example@example.com</span></li>
-              </ul>
-
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <form action="" method="post" role="form" class="contactForm">
-              <div class="row">
-
-                <div id="sendmessage">Your message has been sent. Thank you!</div>
-                <div id="errormessage"></div>
-
-                <div class="col-lg-6">
-                  <div class="form-group contact-block1">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                    <div class="validation"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <input type="submit" class="btn btn-defeault btn-send" value="Send message">
-                </div>
-
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- start sectoion contact -->
 
 
   <!-- start section footer -->
-  <div id="footer" class="text-center">
-    <div class="container">
-      <div class="socials-media text-center">
-
-        <ul class="list-unstyled">
-          <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-          <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-          <li><a href="#"><i class="ion-social-instagram"></i></a></li>
-          <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-          <li><a href="#"><i class="ion-social-tumblr"></i></a></li>
-          <li><a href="#"><i class="ion-social-dribbble"></i></a></li>
-        </ul>
-
-      </div>
-
-      <p>&copy; Copyrights Folio. All rights reserved.</p>
-
-      <div class="credits">
-        <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio
-        -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-
-    </div>
+  <div id="tab-contact" class="row3">
+  	<signature>
+  		<img src ="images/rohitSignature.png"/>
+      <line1>|</line1>
+      <box> 
+  	   	<h2>Rohit Mogalayapalli</h2>
+  		 	<h3>M.S Information | Sports Analytics</h3>
+        <a href = "mailto: rohitmog@umich.edu" style="display:inline"> rohitmog@umich.edu </a>
+        <h3 style="display:inline">|</h3> 
+        <a href="tel:1-248-924-5113" style="display:inline"> 248-924-5113</a>
+        <img src ="images/umsiSignature.png"/>
+      <box/>
+  	</signature>
   </div>
   <!-- End section footer -->
 
@@ -432,7 +172,6 @@
   <script src="lib/isotope/isotope.pkgd.min.js"></script>
 
   <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
