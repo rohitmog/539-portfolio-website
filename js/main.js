@@ -132,29 +132,29 @@ new StickyNavigation();
   // ========================================================================= //
     $("#typed1").typed({
       strings: ["ROHIT MOGALAYAPALLI"],
-      typeSpeed: 40,
-      startDelay: 500,
+      typeSpeed: 100,
+      startDelay: 50,
       cursorChar: " ",
       contentType: 'html'
     });
   $("#typed2").typed({
       strings: ["Sports Analytics Consultant"],
-      typeSpeed: 30,
-      startDelay: 4000,
+      typeSpeed: 100,
+      startDelay: 50,
       cursorChar: "",
       contentType: 'html'
     });
     $("#typed3").typed({
       strings: ["University of Michigan"],
-      typeSpeed: 30,
-      startDelay: 6000,
+      typeSpeed: 100,
+      startDelay: 1000,
       cursorChar: "",
       contentType: 'html'
     });
       $("#typed4").typed({
       strings: ["M.S. Information"],
-      typeSpeed: 30,
-      startDelay: 8000,
+      typeSpeed: 50,
+      startDelay: 3000,
       cursorChar: "",
       contentType: 'html'
     });
