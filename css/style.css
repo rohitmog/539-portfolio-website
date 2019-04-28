@@ -536,7 +536,7 @@ figure.snip0019:hover figcaption::before {
   font-weight:bold;
   letter-spacing:.7px;
   text-align: left;
-  padding-bottom: 3px;  
+  padding-bottom: 0px;  
 }
 .row3 h3{
   font-family: sans-serif;
@@ -546,8 +546,8 @@ figure.snip0019:hover figcaption::before {
   letter-spacing:.7px;
   line-height: 1px;
   text-align: left; 
-  padding-bottom: 2px; 
-  text-overflow: ellipsis;
+  padding-bottom: 1px; 
+  text-overflow: hidden;
 
 }
 
@@ -561,7 +561,7 @@ figure.snip0019:hover figcaption::before {
   letter-spacing:.7px;
   line-height: 1px;
   text-align: left;  
-  padding-bottom: 2px; 
+  padding-bottom: 4px; 
 }
 
 .row3 signature{
