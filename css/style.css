@@ -536,7 +536,8 @@ figure.snip0019:hover figcaption::before {
   font-weight:bold;
   letter-spacing:.7px;
   text-align: left;
-  padding-bottom: 0px;  
+  padding-bottom: 0px;
+  word-wrap: break-word; 
 }
 .row3 h3{
   font-family: sans-serif;
