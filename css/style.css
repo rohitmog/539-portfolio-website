@@ -408,8 +408,10 @@ figure.snip0019 p {
 figure.snip0019 h2 {
   text-align: right;
   display: inline-block;
+  overflow: hidden;
   word-spacing: -0.1em;
   font-weight: 300;
+  font-size:1.5vw;
   text-transform: uppercase;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
