@@ -130,34 +130,34 @@ new StickyNavigation();
   // ========================================================================= //
   //  // Text Scramble
   // ========================================================================= //
-    $("#typed1").typed({
-      strings: ["ROHIT MOGALAYAPALLI"],
-      typeSpeed: 100,
-      startDelay: 50,
-      cursorChar: " ",
-      contentType: 'html'
-    });
-  $("#typed2").typed({
-      strings: ["Sports Analytics Consultant"],
-      typeSpeed: 100,
-      startDelay: 50,
-      cursorChar: "",
-      contentType: 'html'
-    });
-    $("#typed3").typed({
-      strings: ["University of Michigan"],
-      typeSpeed: 100,
-      startDelay: 1000,
-      cursorChar: "",
-      contentType: 'html'
-    });
-      $("#typed4").typed({
-      strings: ["M.S. Information"],
-      typeSpeed: 50,
-      startDelay: 3000,
-      cursorChar: "",
-      contentType: 'html'
-    });
+//     $("#typed1").typed({
+//       strings: ["ROHIT MOGALAYAPALLI"],
+//       typeSpeed: 100,
+//       startDelay: 50,
+//       cursorChar: " ",
+//       contentType: 'html'
+//     });
+//   $("#typed2").typed({
+//       strings: ["Sports Analytics Consultant"],
+//       typeSpeed: 100,
+//       startDelay: 50,
+//       cursorChar: "",
+//       contentType: 'html'
+//     });
+//     $("#typed3").typed({
+//       strings: ["University of Michigan"],
+//       typeSpeed: 100,
+//       startDelay: 1000,
+//       cursorChar: "",
+//       contentType: 'html'
+//     });
+//       $("#typed4").typed({
+//       strings: ["M.S. Information"],
+//       typeSpeed: 50,
+//       startDelay: 3000,
+//       cursorChar: "",
+//       contentType: 'html'
+//     });
   // ========================================================================= //
   //  Porfolio isotope and filter
   // ========================================================================= //
