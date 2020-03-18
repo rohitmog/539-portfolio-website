@@ -121,7 +121,7 @@ TABLET
   width: 100%;
   overflow: hidden;
     /* Create the parallax scrolling effect */
-  background-image: url("https://rohit-portfolio-files.s3.us-east-2.amazonaws.com/images/portfolio.jpg");  
+  background-color: black;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
