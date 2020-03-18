@@ -23,6 +23,11 @@ body {
   color: black;
 }
 
+label{
+  color: #000000;
+  font-weight: 400;
+}
+
 .et-hero-tabs,
 .et-slide {
     display: flex;
