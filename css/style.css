@@ -19,7 +19,9 @@ body {
   box-sizing: border-box;
 }
 
-
+#skip {
+  color: black;
+}
 
 .et-hero-tabs,
 .et-slide {
