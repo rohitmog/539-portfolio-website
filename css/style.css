@@ -99,7 +99,7 @@ MOBILE
 */
 @media screen and (max-width: 480px) {
   
-  #large-header .header-content {
+  div.header-content {
     font-size: small;
   }
 }
@@ -108,7 +108,7 @@ MOBILE
 TABLET
 */
 @media screen and (min-width: 481px) and (max-width: 1000px) {
-  #large-header .header-content {
+  div.header-content {
     font-size: medium;
   }
 }
