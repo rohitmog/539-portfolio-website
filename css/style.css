@@ -94,6 +94,22 @@ Signature
     width: 100%;
   }
 }
+/*
+MOBILE
+*/
+@media screen and (max-width: 480px) {
+  
+  #large-header .header-content {
+    background-image: none;
+  }
+}
+
+/*
+TABLET
+*/
+@media screen and (min-width: 481px) and (max-width: 1000px) {
+  
+}
 
 /*----------------------------------------------------------------------------------*/
 /*  Header
@@ -434,23 +450,5 @@ word-wrap:break-word;
 opacity: 70%;
 }
 
-/*
-MOBILE
-*/
-@media screen (max-width: 480px) {
-  
-  #large-header {
-    animation: none;
-  
-}
-
-/*
-TABLET
-*/
-@media screen (min-width: 481px) and (max-width: 1000px) {
-  
-  #header-content {display:none}
-  
-}
 
 
