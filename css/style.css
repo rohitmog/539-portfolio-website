@@ -83,8 +83,17 @@ body {
 Signature
 /*-----------------------------------------------------------------------------------*/
 
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
 
-
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 
 /*----------------------------------------------------------------------------------*/
 /*  Header
@@ -102,6 +111,9 @@ Signature
   z-index: 1;
   height: 85vh;
   width: 100%;
+
+  animation-duration: 3s;
+  animation-name: slidein;
 }
 
 
@@ -164,115 +176,6 @@ Signature
 .header-content .list-social li i {
   color: #fff;
   font-size: 15px;
-}
-.header-details divSignature {
-  width: 300px;
-  position: absolute; 
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 200px;
-  float = right;
-  padding-top: 40px;
-  padding-bottom: 10px;
-
-}
-
-path {
-    fill: none;
-    stroke: #ffffff;
-    stroke-width: 1;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-miterlimit: 10;
-      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
-
-}
-.line1 {
-    stroke-dasharray: 30;
-    animation: write1 19s linear;
-}
-.line2 {
-    stroke-dasharray: 43; 
-    animation: write2 19s linear;
-}
-.line3 {
-    stroke-dasharray: 16;
-    animation: write3 19s linear;
-}
-.line4 {
-    stroke-dasharray: 23;
-    animation: write4 19s linear;
-}
-
-.line5 {
-    stroke-dasharray: 30;
-    animation: write5 19s linear;
-}
-.line6 {
-    stroke-dasharray: 97;
-    animation: write6 19s linear;
-}
-.line7 {
-    stroke-dasharray: 81;
-    animation: write7 19s linear;
-}
-@keyframes write1 {
-
-    0%, 20% {
-        stroke-dashoffset: 30;
-    }
-    22% {
-        stroke-dashoffset: 0;
-    }
-}
-@keyframes write2 {
-    0%, 22% {
-        stroke-dashoffset: 44;
-    }
-    23% {
-        stroke-dashoffset: 0;
-    }
-}
-@keyframes write3 {
-    0%, 23% {
-        stroke-dashoffset: 17;
-    }
-    24% {
-        stroke-dashoffset: 0;
-    }
-}
-@keyframes write4 {
-    0%, 24% {
-        stroke-dashoffset: 23;
-    }
-    26% {
-        stroke-dashoffset: 0;
-    }
-}
-@keyframes write5 {
-    0%, 27% {
-        stroke-dashoffset: 31;
-    }
-    29% {
-        stroke-dashoffset: 0;
-    }
-}
-@keyframes write6 {
-    0%, 29% {
-        stroke-dashoffset: 98;
-    }
-    31% {
-        stroke-dashoffset: 0;
-    }
-}
-@keyframes write7 {
-    0%, 31% {
-        stroke-dashoffset: 82;
-    }
-    34% {
-        stroke-dashoffset: 0;
-    }
 }
 
 figure.image-details{  
@@ -536,7 +439,8 @@ MOBILE
 */
 @media screen (max-width: 480px) {
   
-  #header-content {display:none}
+  #large-header {
+    animation: none;
   
 }
 
@@ -549,11 +453,4 @@ TABLET
   
 }
 
-/*
-DESKTOP
-*/
-@media screen (min-width: 1000px) {
-  
-  #header-content {display:none}
-  
-}
+

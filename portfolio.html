@@ -36,7 +36,9 @@ card.addEventListener( 'click', function() {
 
 <body>
   <!-- Hero -->
-  <section class="et-hero-tabs">
+  <a id="skip" href="#large-header" >Jump to content</a>
+
+  <section class="et-hero-tabs" role = "navigation">
     <div class="et-hero-tabs-container">
       <a class="et-hero-tab" href="index.html" >Main</a>
       <a class="et-hero-tab" href="about.html" >About</a>
@@ -45,8 +47,9 @@ card.addEventListener( 'click', function() {
     </div>
   </section>
 
+
   <!-- start section portfolio -->
-  <div id ='tab-portfolio' class = 'row1'>
+  <div id ='tab-portfolio' class = 'row1' role="main">
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
@@ -102,7 +105,7 @@ card.addEventListener( 'click', function() {
 
 
   <!-- start section footer -->
-  <div id="tab-contact" class="row3">
+  <div id="tab-contact" class="row3" role="contentinfo">
   	<signature>
   		<img src ="images/rohitSignature.png"/>
       <line1>|</line1>
