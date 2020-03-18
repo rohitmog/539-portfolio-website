@@ -97,21 +97,7 @@ Signature
 /*
 MOBILE
 */
-@media screen and (max-width: 480px) {
-  
-  div.header-content {
-    font-size: small;
-  }
-}
 
-/*
-TABLET
-*/
-@media screen and (min-width: 481px) and (max-width: 1000px) {
-  div.header-content {
-    font-size: medium;
-  }
-}
 
 /*----------------------------------------------------------------------------------*/
 /*  Header
@@ -367,3 +353,24 @@ opacity: 70%;
 
 
 
+@media screen and (max-width: 480px) {
+  
+  h1 {
+    font-size: 12pt;
+  }
+  h2{
+    font-size: 8pt;
+  }
+}
+
+/*
+TABLET
+*/
+@media screen and (min-width: 481px) and (max-width: 1000px) {
+  h1 {
+    font-size: 25pt;
+  }
+  h2{
+    font-size: 15pt;
+  }
+}
