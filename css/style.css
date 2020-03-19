@@ -4,7 +4,7 @@
 
 body {
   background: #f7f7f7;
-  color: #898989;
+  color: #black;
   font-family: 'Poppins', helvetica;
   font-size: 15px;
   font-weight: 300;
@@ -170,8 +170,7 @@ grid-column: 1 / 2;
 
 
 .row1{
-  background-color: #000000;
-  background-image: linear-gradient(-45deg, #000000,  #C0C0C0, #C0C0C0, #000000);
+  background-color: whitesmoke;
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto;
@@ -368,6 +367,10 @@ opacity: 70%;
   h2{
     font-size: 8pt;
   }
+
+  #hide{
+    display: none;
+  }
 }
 
 /*
@@ -380,4 +383,8 @@ TABLET
   h2{
     font-size: 15pt;
   }
+  #hide{
+    font-size: 8pt;
+  }
+
 }
